@@ -301,9 +301,7 @@
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Boilerplate\tools\documentation\document.bat" />
     <None Include="Boilerplate\tools\documentation\document.sh" />
