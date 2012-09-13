@@ -35,13 +35,18 @@ a.site-logo {
 /** Side Menu Styles **/
 aside {
     width: 200px;
-    float: left;
+    float:left;
     min-height: 500px;
     color: #333333;
-    border-right: 1px solid #cccccc;
     background-image: url(sectionSeperator.png);
     background-position: right top;
     background-repeat: no-repeat;
+}
+
+.main-menu-con
+{
+    float: left;
+    border-right: 1px solid #cccccc;
     padding-right: 2px;
 }
 
@@ -70,6 +75,12 @@ aside li a:hover {
     color: #d70000 !important;
     border-bottom: 1px solid #f1f1f1;
 }
+
+.text-center {
+	text-align: center;
+	font-size: 15px !important;
+}
+
 .menu-item{
     padding-left:32px;
     padding-top: 4px;
@@ -84,6 +95,16 @@ aside li a:hover {
     color: #d70000 !important;;
     text-decoration: none !important;
 }
+/**Side Pane Location Styles**/
+.side-pane-con
+{
+    float: right;
+    border-left: 1px solid #cccccc;
+    padding-left: 2px;
+}
+
+
+
 /** Hyperlink Styles **/
 a:link, a:visited, a:active {
     color: #d70000;
@@ -120,9 +141,10 @@ td {
 
 /** Main Content and Positioning  Styles **/
 .appcontent {
-    width: 75%;
-    padding-left: 30px;
-    float: right;
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 10px;
+    float: left
 }
 
 h4 {

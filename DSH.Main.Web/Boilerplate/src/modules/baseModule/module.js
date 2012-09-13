@@ -1,4 +1,4 @@
-define(['Boiler', './mainMenu/component', './language/component', './theme/component', './landingPage/component', './footer/component'], function(Boiler, MainMenuComponent, LanguageComponent, ThemeComponent, LandingPageComponent, FooterComponent) {
+define(['Boiler', './mainMenu/component', './language/component', './theme/component', './landingPage/component', './footer/component','./sidePane/component'], function(Boiler, MainMenuComponent, LanguageComponent, ThemeComponent, LandingPageComponent, FooterComponent,SidePaneComponent) {
 
     var Module = function(globalContext) {
         var context = new Boiler.Context(globalContext);
@@ -7,7 +7,8 @@ define(['Boiler', './mainMenu/component', './language/component', './theme/compo
         var controller = new Boiler.DomController($('#page-content'));
         //add routes with DOM node selector queries and relavant components
         controller.addRoutes({
-            ".main-menu" : new MainMenuComponent(context),
+            ".main-menu": new MainMenuComponent(context),
+            ".side-pane": new SidePaneComponent(context),
             ".language" : new LanguageComponent(context),
             ".theme" : new ThemeComponent(context),
             ".footer" : new FooterComponent(context)
