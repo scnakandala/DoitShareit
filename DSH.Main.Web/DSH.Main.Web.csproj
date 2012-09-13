@@ -68,14 +68,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RESTController.cs" />
+    <Compile Include="Content\Controllers\AccountController.cs" />
+    <Compile Include="Content\Controllers\HomeController.cs" />
+    <Compile Include="Content\Controllers\RESTController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\EmployeeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EmployeesRepository.cs" />
     <Compile Include="RESTComponents\ActionResult\BinaryActionResult.cs" />
     <Compile Include="RESTComponents\ActionResult\JsonActionResult.cs" />
     <Compile Include="RESTComponents\ActionResult\RestfulActionResultBase.cs" />
@@ -104,6 +106,9 @@
     <Compile Include="RESTComponents\Serializer\XmlSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\DSH.Main.Web.dll" />
+    <Content Include="bin\DSH.Main.Web.pdb" />
+    <Content Include="Boilerplate\favicon.ico" />
     <Content Include="Boilerplate\libs\amplifystore\amplify.store.min.1.1.0.js" />
     <Content Include="Boilerplate\libs\boilerplate\groundwork.js" />
     <Content Include="Boilerplate\libs\crossroads\crossroads.min.js" />
@@ -160,7 +165,10 @@
     <Content Include="Boilerplate\src\modules\baseModule\footer\view.html" />
     <Content Include="Boilerplate\src\modules\baseModule\landingPage\component.js" />
     <Content Include="Boilerplate\src\modules\baseModule\landingPage\view.html" />
+    <Content Include="Boilerplate\src\modules\baseModule\language\assets\en.png" />
+    <Content Include="Boilerplate\src\modules\baseModule\language\assets\sv.png" />
     <Content Include="Boilerplate\src\modules\baseModule\language\component.js" />
+    <Content Include="Boilerplate\src\modules\baseModule\language\style.css" />
     <Content Include="Boilerplate\src\modules\baseModule\language\view.html" />
     <Content Include="Boilerplate\src\modules\baseModule\mainMenu\assets\home.png" />
     <Content Include="Boilerplate\src\modules\baseModule\mainMenu\assets\module_a.png" />
@@ -171,6 +179,11 @@
     <Content Include="Boilerplate\src\modules\baseModule\mainMenu\style.css" />
     <Content Include="Boilerplate\src\modules\baseModule\mainMenu\view.html" />
     <Content Include="Boilerplate\src\modules\baseModule\module.js" />
+    <Content Include="Boilerplate\src\modules\baseModule\sidePane\component.js" />
+    <Content Include="Boilerplate\src\modules\baseModule\sidePane\nls\resources.js" />
+    <Content Include="Boilerplate\src\modules\baseModule\sidePane\nls\sv\resources.js" />
+    <Content Include="Boilerplate\src\modules\baseModule\sidePane\style.css" />
+    <Content Include="Boilerplate\src\modules\baseModule\sidePane\view.html" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\component.js" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\gray\btnBlackBack.png" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\gray\btnBlueBack.png" />
@@ -197,9 +210,16 @@
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\errorDown.png" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\grayTitleBack.png" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\headerBack.png" />
+    <Content Include="Boilerplate\src\modules\baseModule\theme\red\logo.jpg" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\logo.png" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\menu_bar.gif" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\view.html" />
+    <Content Include="Boilerplate\src\modules\component.js" />
+    <Content Include="Boilerplate\src\modules\gallery\gallery\component.js" />
+    <Content Include="Boilerplate\src\modules\gallery\gallery\view.html" />
+    <Content Include="Boilerplate\src\modules\gallery\gallery\viewmodel.js" />
+    <Content Include="Boilerplate\src\modules\gallery\module.js" />
+    <Content Include="Boilerplate\src\modules\gallery\settings.js" />
     <Content Include="Boilerplate\src\modules\modules.js" />
     <Content Include="Boilerplate\src\modules\sampleModule1\clickCounter\component.js" />
     <Content Include="Boilerplate\src\modules\sampleModule1\clickCounter\view.html" />
@@ -221,6 +241,9 @@
     <Content Include="Boilerplate\src\modules\sampleModule2\employeeList\view.html" />
     <Content Include="Boilerplate\src\modules\sampleModule2\employeeList\viewmodel.js" />
     <Content Include="Boilerplate\src\modules\sampleModule2\module.js" />
+    <Content Include="Boilerplate\src\modules\sampleModule2\myList\component.js" />
+    <Content Include="Boilerplate\src\modules\sampleModule2\myList\view.html" />
+    <Content Include="Boilerplate\src\modules\sampleModule2\myList\viewmodel.js" />
     <Content Include="Boilerplate\src\modules\sampleModule2\salesDashboard\chartBinding.js" />
     <Content Include="Boilerplate\src\modules\sampleModule2\salesDashboard\chartViewPanel\component.js" />
     <Content Include="Boilerplate\src\modules\sampleModule2\salesDashboard\chartViewPanel\style.css" />
@@ -237,6 +260,13 @@
     <Content Include="Boilerplate\src\modules\sampleModule2\salesDashboard\view.html" />
     <Content Include="Boilerplate\src\modules\sampleModule2\salesDashboard\viewmodel.js" />
     <Content Include="Boilerplate\src\modules\sampleModule2\settings.js" />
+    <Content Include="Boilerplate\src\modules\style.css" />
+    <Content Include="Boilerplate\src\modules\test\module.js" />
+    <Content Include="Boilerplate\src\modules\test\settings.js" />
+    <Content Include="Boilerplate\src\modules\test\test\component.js" />
+    <Content Include="Boilerplate\src\modules\test\test\view.html" />
+    <Content Include="Boilerplate\src\modules\test\test\viewmodel.js" />
+    <Content Include="Boilerplate\src\modules\view.html" />
     <Content Include="Boilerplate\src\settings.js" />
     <Content Include="Boilerplate\tests\core\helpers\mediator.js" />
     <Content Include="Boilerplate\tests\core\helpers\router.js" />
@@ -270,6 +300,10 @@
     <Content Include="Boilerplate\tools\snippets\sampleModule1\sampleUIComponent2\viewmodel.js" />
     <Content Include="Boilerplate\tools\snippets\sampleModule1\settings.js" />
     <Content Include="Global.asax" />
+    <Content Include="obj\Debug\DSH.Main.Web.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\DSH.Main.Web.dll" />
+    <Content Include="obj\Debug\DSH.Main.Web.pdb" />
+    <Content Include="obj\Debug\TempPE\RESTComponents.RestfulContent.Designer.cs.dll" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -294,15 +328,18 @@
     <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
     <Content Include="Views\Account\LogOn.aspx" />
     <Content Include="Views\Account\Register.aspx" />
-    <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="Boilerplate\src\modules\baseModule\sidePane\assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Boilerplate\README.md" />
+    <None Include="Boilerplate\src\modules\baseModule\theme\.tmp_view.html.49399~" />
     <None Include="Boilerplate\tools\documentation\document.bat" />
     <None Include="Boilerplate\tools\documentation\document.sh" />
     <None Include="Boilerplate\tools\documentation\README.md" />
@@ -322,11 +359,16 @@
     <None Include="Boilerplate\tools\optimizer\optimizer.bat" />
     <None Include="Boilerplate\tools\optimizer\optimizer.sh" />
     <None Include="Boilerplate\tools\optimizer\README.md" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\Debug\GenerateResource.write.1.tlog" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="obj\Debug\DSH.Main.Web.RESTComponents.RestfulContent.resources" />
     <EmbeddedResource Include="RESTComponents\RestfulContent.resx">
       <LastGenOutput>RestfulContent.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
