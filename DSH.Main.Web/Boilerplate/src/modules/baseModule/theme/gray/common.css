@@ -43,13 +43,6 @@ aside {
     background-repeat: no-repeat;
 }
 
-.main-menu-con
-{
-    float: left;
-    border-right: 1px solid #cccccc;
-    padding-right: 2px;
-}
-
 aside ul {
     padding: 5px 0px 20px 0px;
     margin: 0px;
@@ -95,14 +88,6 @@ aside li a:hover {
     color: #d70000 !important;;
     text-decoration: none !important;
 }
-/**Side Pane Location Styles**/
-.side-pane-con
-{
-    float: right;
-    border-left: 1px solid #cccccc;
-    padding-left: 2px;
-}
-
 
 
 /** Hyperlink Styles **/

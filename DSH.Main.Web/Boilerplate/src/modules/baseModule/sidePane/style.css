@@ -1,2 +1,8 @@
-
+/**Side Pane Location Styles**/
+.side-pane-con
+{
+    float: right;
+    border-left: 1px solid #cccccc;
+    padding-left: 2px;
+}
 

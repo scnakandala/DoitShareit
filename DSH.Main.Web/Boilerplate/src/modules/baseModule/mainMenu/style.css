@@ -11,3 +11,9 @@
 	background:url(./assets/module_b.png) no-repeat;
 }
 
+.main-menu-con
+{
+    float: left;
+    border-right: 1px solid #cccccc;
+    padding-right: 2px;
+}
