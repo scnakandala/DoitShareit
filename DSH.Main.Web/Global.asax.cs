@@ -18,29 +18,26 @@ namespace DSH.Main.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapRoute(
-            //    "Default", // Route name
-            //    "{controller}/{action}/{id}", // URL with parameters
-            //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
-            //);
-
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}", // URL with parameters
-                new { controller = "REST", action = "Index"} // Parameter defaults
+                new { controller = "Home", action = "Index"} // Parameter defaults
             );
+
+            //routes.MapRoute(
+            //    "Default", // Route name
+            //    "{controller}/{action}", // URL with parameters
+            //    new { controller = "REST", action = "Index"} // Parameter defaults
+            //);
 
         }
 
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
             var c = new RestfulMVC();
             c.Init();
-
             ModelBinders.Binders.DefaultBinder = new RestfulDefaultModelBinder();
-
             RegisterRoutes(RouteTable.Routes);
         }
     }
