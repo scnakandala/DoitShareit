@@ -18,9 +18,6 @@
 
 		<section id="page-content">
 			<header>
-				<section class="theme"></section>
-				<section class="language"></section>
-				<a href="#" class="site-logo"> </a>
 			</header>
 			<aside class="main-menu-con">
 				<section class="main-menu"></section>
