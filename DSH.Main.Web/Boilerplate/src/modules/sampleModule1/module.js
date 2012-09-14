@@ -1,4 +1,4 @@
-define(['Boiler', './settings', './clickCounter/component'], function(Boiler, settings, ClickCounterComponent) {
+define(['Boiler', './settings', './departments/component', './clickCounter/component'], function(Boiler, settings, DepartmentComponent, ClickCounterComponent) {
 
 	var Module = function(globalContext) {
 
@@ -7,7 +7,8 @@ define(['Boiler', './settings', './clickCounter/component'], function(Boiler, se
 
 		var controller = new Boiler.UrlController($(".appcontent"));
 		controller.addRoutes( {
-			'clickcounter': new ClickCounterComponent(context)
+			'departments/:name:' : new DepartmentComponent(context),
+			'clickcounter' : new ClickCounterComponent(context)
 		});
 		controller.start();
 

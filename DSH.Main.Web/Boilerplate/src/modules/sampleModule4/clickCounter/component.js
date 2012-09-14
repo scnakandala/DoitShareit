@@ -13,9 +13,6 @@ define(['Boiler', 'text!./view.html', './lottery/component'], function(Boiler, t
 			if (!parentPanel) {
 				//create the holding panel for clickme and lottery components
 				parentPanel = new Boiler.ViewTemplate(parent, template, null);
-				//create the clickme component and append to the parent
-				//var clickmeComp = new ClickmeComp(moduleContext);
-				//clickmeComp.initialize($('#clickme'));
 				//create lottery component and add to the parent
 				var lotteryComp = new LotteryComp(moduleContext);
 				lotteryComp.initialize($('#lottery'));
