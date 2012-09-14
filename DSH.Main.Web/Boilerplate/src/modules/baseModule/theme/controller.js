@@ -7,7 +7,6 @@ define(['Boiler', 'path!./red/common.css', 'path!./gray/common.css'], function(B
 	 * CSS file when the theme is requested.
 	 */
 	var themes = {
-		red : redThemePath,
 		gray : grayThemePath
 	};
 
@@ -28,7 +27,7 @@ define(['Boiler', 'path!./red/common.css', 'path!./gray/common.css'], function(B
 		this.changeTheme = function(selection) {
 			if (themes[selection]) {
 				//set style in header
-				Boiler.ViewTemplate.setStyleLink(themes[selection], DICTIONARY_KEY);
+                Boiler.ViewTemplate.setStyleLink(themes[selection], DICTIONARY_KEY);
 				//sale in the local store
 				moduleContext.persistObject(DICTIONARY_KEY, selection);
 			}
@@ -43,12 +42,14 @@ define(['Boiler', 'path!./red/common.css', 'path!./gray/common.css'], function(B
 			}
 
 			//lets use the panel to set style in header
-			Boiler.ViewTemplate.setStyleLink(themes[storedThemeKey], DICTIONARY_KEY);
+			//We are not going to use it
+            //Boiler.ViewTemplate.setStyleLink(themes[storedThemeKey], DICTIONARY_KEY);
 
-			//lets handle the theme change event
-			$("#theme-selector li").bind("click", function() {
-				self.changeTheme(this.id);
-			});
+            //lets handle the theme change event
+            //We are not going to use this too
+			//$("#theme-selector li").bind("click", function() {
+			//	self.changeTheme(this.id);
+			//});
 		};
 
 	};

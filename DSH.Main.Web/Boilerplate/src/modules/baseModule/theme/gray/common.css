@@ -3,7 +3,6 @@ body {
     color: #111111;
     margin: 0px !important;
     padding: 0px !important;
-    background: url(headerBack.png) repeat-x;
 }
 
 input, select, textarea {
@@ -12,6 +11,11 @@ input, select, textarea {
 }
 
 /** Main  Header Styles **/
+#page-content
+{
+    border-bottom: 2px solid #000000;
+}
+
 header {
     height: 45px;
     padding-top: 5px;
@@ -20,7 +24,6 @@ header {
 }
 
 a.site-logo {
-    background: url(logo.png) no-repeat;
     display: inline-block;
     width: 184px;
     height: 35px;
@@ -34,13 +37,10 @@ a.site-logo {
 
 /** Side Menu Styles **/
 aside {
-    width: 200px;
+    width: 20%;
     float:left;
     min-height: 500px;
     color: #333333;
-    background-image: url(sectionSeperator.png);
-    background-position: right top;
-    background-repeat: no-repeat;
 }
 
 aside ul {
@@ -126,7 +126,7 @@ td {
 
 /** Main Content and Positioning  Styles **/
 .main-content {
-    width: 60%;
+    width: 50%;
     padding-left: 15px;
     padding-right: 10px;
     float: left
@@ -173,14 +173,12 @@ p{
 
 /**Portlets and Title Styls**/
 .portlet-blue, .portlet-black, .portlet-gray {
-    background-image: url(portletBottom.png);
     background-repeat: repeat-x;
     padding-bottom: 10px;
     background-position: bottom;
 }
 
 .gray-title-with-bullet, .portlet-gray .title{
-    background-image: url(bullet3.png);
     background-repeat: no-repeat;
     height: 24px;
     padding-left: 24px;
@@ -190,8 +188,6 @@ p{
 
 .gray-title-with-bullet span, .portlet-gray .title span {
     display: block;
-    background-image: url(titleGrayBack.png);
-    background-repeat: repeat-x;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
     font: bold 11px Tahoma;
@@ -199,8 +195,6 @@ p{
     padding: 6px 8px 5px 8px;
 }
 .black-title-with-bullet, .portlet-black .title{
-    background-image: url(bullet1.png);
-    background-repeat: no-repeat;
     height: 24px;
     padding-left: 24px;
     margin-bottom: 15px;
@@ -209,8 +203,6 @@ p{
 
 .black-title-with-bullet span, .portlet-black .title span {
     display: block;
-    background-image: url(titleBlackBack.png);
-    background-repeat: repeat-x;
     color: #ffffff;
     text-shadow: 1px 1px #000000;
     font: bold 11px Tahoma;
@@ -219,8 +211,6 @@ p{
 }
 
 .blue-title-with-bullet, .portlet-blue .title {
-    background-image: url(bullet3.png);
-    background-repeat: no-repeat;
     height: 24px;
     padding: 0px 0px 0px 24px;
     margin-bottom: 15px;
@@ -229,8 +219,6 @@ p{
 
 .blue-title-with-bullet span, .portlet-blue .title span {
     display: block;
-    background-image: url(titleBlueBack.png);
-    background-repeat: repeat-x;
     color: #ffffff;
     text-shadow: 1px 1px #333333;
     font: bold 11px Tahoma;
@@ -239,8 +227,6 @@ p{
 }
 
 .portlet-blue button, .portlet-blue input[type=button], .portlet-blue button, .portlet-blue input[type=button]:disabled{
-    background-image: url("btnBlueBack.png");
-    background-repeat: repeat-x;
     color: #ffffff;
     text-shadow: 1px 1px #333333;
     border: 1px solid #0196c9;
@@ -259,8 +245,6 @@ p{
 
 .error {
     display: inline-block;
-    background-image: url(errorDown.png);
-    background-repeat: no-repeat;
     padding: 7px 6px 4px 9px;
     color: #ffffff;
     font: normal 11px "Trebuchet MS";
@@ -312,3 +296,5 @@ p{
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
+
