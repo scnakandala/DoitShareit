@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html"; charset="ISO-8859-1">
 	<head>
 		<meta charset="utf-8">
-		<title>BoilerplateJS - JavaScript Reference Architecture</title>
+		<title>Do It Share It! 99xTechnology</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<!-- optional static style definition to render fast. 
 			see 'src/modules/baseModule/theme/component.js' to see dynamic stylesheet setup on themes -->
