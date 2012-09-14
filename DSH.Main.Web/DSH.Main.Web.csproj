@@ -165,10 +165,7 @@
     <Content Include="Boilerplate\src\modules\baseModule\footer\view.html" />
     <Content Include="Boilerplate\src\modules\baseModule\landingPage\component.js" />
     <Content Include="Boilerplate\src\modules\baseModule\landingPage\view.html" />
-    <Content Include="Boilerplate\src\modules\baseModule\language\assets\en.png" />
-    <Content Include="Boilerplate\src\modules\baseModule\language\assets\sv.png" />
     <Content Include="Boilerplate\src\modules\baseModule\language\component.js" />
-    <Content Include="Boilerplate\src\modules\baseModule\language\style.css" />
     <Content Include="Boilerplate\src\modules\baseModule\language\view.html" />
     <Content Include="Boilerplate\src\modules\baseModule\mainMenu\assets\home.png" />
     <Content Include="Boilerplate\src\modules\baseModule\mainMenu\assets\module_a.png" />
@@ -187,8 +184,6 @@
     <Content Include="Boilerplate\src\modules\baseModule\theme\component.js" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\controller.js" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\gray\common.css" />
-    <Content Include="Boilerplate\src\modules\baseModule\theme\gray\logo.jpg" />
-    <Content Include="Boilerplate\src\modules\baseModule\theme\gray\menu_bar.gif" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\common.css" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\logo.jpg" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\red\menu_bar.gif" />
@@ -318,7 +313,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Boilerplate\README.md" />
-    <None Include="Boilerplate\src\modules\baseModule\theme\.tmp_view.html.49399~" />
     <None Include="Boilerplate\tools\documentation\document.bat" />
     <None Include="Boilerplate\tools\documentation\document.sh" />
     <None Include="Boilerplate\tools\documentation\README.md" />
