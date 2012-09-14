@@ -1,4 +1,4 @@
-define(['Boiler', 'text!./view.html', './clickme/component', './lottery/component'], function(Boiler, template, ClickmeComp, LotteryComp) {
+define(['Boiler', 'text!./view.html', './clickme/component'], function(Boiler, template, ClickmeComp) {
 
 	/**
 	 * Parent Component class that will hold the clickme and lottery components
@@ -17,8 +17,8 @@ define(['Boiler', 'text!./view.html', './clickme/component', './lottery/componen
 				var clickmeComp = new ClickmeComp(moduleContext);
 				clickmeComp.initialize($('#clickme'));
 				//create lottery component and add to the parent
-				var lotteryComp = new LotteryComp(moduleContext);
-				lotteryComp.initialize($('#lottery'));
+				//var lotteryComp = new LotteryComp(moduleContext);
+				//lotteryComp.initialize($('#lottery'));
 			}
 			parentPanel.show();
 		}
