@@ -12,6 +12,7 @@ define(function(require) {
         require('./sampleModule2/module'),
         require('./sampleModule3/module'),
         require('./sampleModule4/module')
+        
 	];
 
 });

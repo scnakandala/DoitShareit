@@ -11,6 +11,14 @@
 	background:url(./assets/module_b.png) no-repeat;
 }
 
+#product-module-c{
+	background:url(./assets/module_a.png) no-repeat;
+}
+
+#product-module-d{
+	background:url(./assets/module_b.png) no-repeat;
+}
+
 .main-menu-con
 {
     float: left;
