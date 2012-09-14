@@ -186,8 +186,6 @@
     <Content Include="Boilerplate\src\modules\baseModule\theme\controller.js" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\gray\common.css" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\gray\icon.png" />
-    <Content Include="Boilerplate\src\modules\baseModule\theme\red\common.css" />
-    <Content Include="Boilerplate\src\modules\baseModule\theme\red\menu_bar.gif" />
     <Content Include="Boilerplate\src\modules\baseModule\theme\view.html" />
     <Content Include="Boilerplate\src\modules\modules.js" />
     <Content Include="Boilerplate\src\modules\sampleModule1\clickCounter\clickme\component.js" />

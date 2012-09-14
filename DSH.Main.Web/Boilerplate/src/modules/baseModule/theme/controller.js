@@ -25,12 +25,9 @@ define(['Boiler', 'path!./red/common.css', 'path!./gray/common.css'], function(B
 		var self = this;
 
 		this.changeTheme = function(selection) {
-			if (themes[selection]) {
 				//set style in header
                 Boiler.ViewTemplate.setStyleLink(themes[selection], DICTIONARY_KEY);
-				//sale in the local store
 				moduleContext.persistObject(DICTIONARY_KEY, selection);
-			}
 		}
 
 		this.init = function() {
@@ -40,16 +37,8 @@ define(['Boiler', 'path!./red/common.css', 'path!./gray/common.css'], function(B
 				//if not locally stored, use the default
 				storedThemeKey = "gray";
 			}
-
 			//lets use the panel to set style in header
-			//We are not going to use it
-            //Boiler.ViewTemplate.setStyleLink(themes[storedThemeKey], DICTIONARY_KEY);
-
-            //lets handle the theme change event
-            //We are not going to use this too
-			//$("#theme-selector li").bind("click", function() {
-			//	self.changeTheme(this.id);
-			//});
+            Boiler.ViewTemplate.setStyleLink(themes[storedThemeKey], DICTIONARY_KEY);
 		};
 
 	};

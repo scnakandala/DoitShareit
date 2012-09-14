@@ -1,28 +1,22 @@
-define(['Boiler', 'text!./view.html', './controller'], function(Boiler, template, Controller) {
+define(['Boiler', 'text!./view.html', './controller'], function (Boiler, template, Controller) {
 
-	var Component = function(moduleContext) {
+    var Component = function (moduleContext) {
 
-		var panel = null;
+        var panel = null;
 
-		return {
-			activate : function(parent) {
-				if (!panel) {
-					//create the theme selection component
-					panel = new Boiler.ViewTemplate(parent, template, null);
-					//create our controller that will handle user events
-					new Controller(moduleContext).init();
-				}
-				panel.show();
-			},
+        return {
+            activate: function (parent) {
+                if (!panel) {
+                    //create our controller that will handle user events
+                    new Controller(moduleContext).init();
+                }
+            },
 
-			deactivate : function() {
-				if (panel) {
-					panel.hide();
-				}
-			}
-		};
-	};
+            deactivate: function () {
+            }
+        };
+    };
 
-	return Component;
+    return Component;
 
 });
