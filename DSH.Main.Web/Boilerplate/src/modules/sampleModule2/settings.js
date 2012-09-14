@@ -5,7 +5,8 @@ define(['path!../../../server/'], function(serverPath) {
 			empimages : serverPath + "{empid}.png",
 			empdetails : serverPath + "{empid}.txt",
 			yearlysales : serverPath + "yearly-sales.txt",
-			employees : serverPath + "employees.txt"
+			//employees : serverPath + "employees.txt"
+			employees: "http://localhost:21768/REST/GetEmployee"
 		}
 	}
 });
